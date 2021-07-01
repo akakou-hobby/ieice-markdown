@@ -1,0 +1,47 @@
+\documentclass[twocolumn, a4paper]{ieicejsp}
+\setcounter{secnumdepth}{2}
+
+\usepackage{newenum}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[dvipdfmx,setpagesize=false]{hyperref}
+
+\usepackage{bm}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{fancyvrb}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{bookmark}
+\usepackage{biblatex}
+
+\def\tightlist{\itemsep1pt\parskip0pt\parsep0pt}
+
+\setstretch{0.3} 
+
+% \title{$title$}
+\title{
+  {\bf $title$}
+  {\normalsize \\ $subtitle$}
+}
+
+
+$for(author)$
+  \author{$author$}
+  \affliate{$affiliation$}
+$endfor$
+
+\bibliography{ref}
+
+\begin{document}
+\maketitle
+
+$body$
+
+\medskip
+\printbibliography[title=参考文献]
+
+\end{document}

@@ -1,0 +1,9 @@
+compiler:
+  build: "."
+  volumes:
+    - ./:/app/
+    - ./tmp:/app/tmp/
+    - ./config.yaml:/root/.pandoc-crossref/config.yaml
+  command: "sh /compile.sh"
+  working_dir: /app
+  tty: true
